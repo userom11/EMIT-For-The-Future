@@ -1,0 +1,397 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* html:not(img) {
+    filter: invert(1) hue-rotate(180deg);
+} */
+
+line {
+    height: 50px;
+    width: 100vw;
+    background: transparent;
+}
+
+body {
+    background-color: aqua;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.simulation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 50px 0 50px;
+    height: 50vh;
+}
+
+.preview {
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.btn-simulation {
+    justify-content: center;
+    padding: .5rem;
+    border-radius: 1em;
+    background: white;
+    outline: 1px solid green;
+    transition: .5s ease-in-out;
+    position: absolute;
+    transform: translateY(-120px) translateX(-300px);
+}
+
+.btn-simulation > a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: .5s ease-in-out;
+    font-weight: bold;
+    font-family: "Oswald" ,system-ui;
+}
+
+.btn-simulation:hover {
+    background: green;
+}
+
+.btn-simulation > a:hover {
+    color: black;
+}
+
+.btn-simulation-container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    transition: .5s ease-in-out;
+    animation: flip 2s infinite;
+}
+
+.btn-simulation-container:hover {
+    transform: translateX(0px);
+}
+
+
+@keyframes flip {
+	0% {
+		transform: translateX(10px);
+	}
+	50% {
+		transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+button > a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin: 20px;
+}
+
+input, a,p, li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 20px;
+}
+
+r {
+    color: red; 
+    font-weight: bold;
+}
+
+header.masthead {
+    position: relative;
+    background: url("https://c4.wallpaperflare.com/wallpaper/134/920/938/smoke-waves-rays-light-wallpaper-preview.jpg")
+        /*black no-repeat center center scroll*/
+    ;
+    background-size: cover;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+    position: absolute;
+    background-color: #333;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+header.masthead h1 {
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    header.masthead {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+
+    header.masthead h1 {
+        font-size: 3rem;
+    }
+}
+
+.showcase .showcase-text {
+    padding: 3rem;
+}
+
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+    /* filter: blur(5px); */
+}
+
+@media (min-width: 768px) {
+    .showcase .showcase-text {
+        padding: 7rem;
+    }
+}
+
+
+.features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+    max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem;
+}
+
+.testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+    max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+    max-width: 12rem;
+    -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+    position: relative;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+
+.video-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn {
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+.call-to-action .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.video-div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+iframe {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+video {
+    height: 750px;
+    transform: translateY(80px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scroller {
+    max-width: 1100px;
+}
+
+.scroller-title {
+    font-weight: bold;
+    text-align: center;
+}
+  
+  .scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0rem;
+  }
+
+  .scroller__inner > * {
+    margin: 1rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+  
+  .scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+  }
+  
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+  }
+  
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+  
+  /* general styles */
+  
+  :root {
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-primary-100: hsl(205, 15%, 58%);
+    --clr-primary-400: hsl(215, 25%, 27%);
+    --clr-primary-800: hsl(217, 33%, 17%);
+    --clr-primary-900: hsl(218, 33%, 9%);
+  }
+  
+  
+  body {
+    display: grid;
+    min-block-size: 100vh;
+    place-content: center;
+    font-family: system-ui;
+    font-size: 1.125rem;
+    background-color: var(--clr-primary-800);
+  }
+  
+  .tag-list {
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+  }
+  
+  .tag-list li {
+    padding: 1rem;
+    background: var(--clr-primary-400);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+  }
+  
+  /* for testing purposed to ensure the animation lined up correctly */
+  .test {
+    background: red !important;
+  }
+  

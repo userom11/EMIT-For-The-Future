@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+#parrallax {
+    width: 100%;
+    padding:0;
+}
+
+.parallax {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+}
+
+#parrallax h2 {
+    font-family:'Oswald', sans-serif;
+    font-size:70px;
+    letter-spacing:10px;
+    text-align:center;
+    color:whitesmoke;
+    font-weight:400;
+    text-transform:uppercase;
+    z-index:10;
+    opacity:.9;
+    padding: 50px 0 100px 0;
+}
+
